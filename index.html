@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Mini Youtube</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="food1.css"/> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <img src="youtube.jpg">
+	<style>
+    img{
+    	margin-top: 3%;
+        margin-left:25%;
+    	height: 20%;
+    	width: 50%;
+
+    }
+
+		body{
+	font-family: 'Raleway', sans-serif;
+    background-color: white;
+	background-size: cover; 
+
+}
+
+.div1{
+	color: white;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.div1 h1{
+
+	font-size: 2.5rem;
+	text-align: center;
+	color: black;
+}
+.div1 p{
+	text-align: center;
+	color: green;
+	font-size: 1.5rem;
+
+}
+
+.form_code input{
+
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2rem;
+	border-color: black;
+	padding: .6rem;
+	outline: none;
+	}
+.form_code input[type="text"]:focus{
+	width: 100%;
+}
+.div1 button{
+	width: 40%;
+	display: block;
+	text-align: center;
+	background: lightblue;
+	color: black;
+	padding: .6rem;
+	border: none;
+	border-radius: .3rem;
+	margin: 2rem auto 0rem;
+}
+	</style>
+</head>
+<body>
+	<section class="f1">
+		<div class="div1">
+			<h1>MINI YOUTUBE</h1>
+			<p>
+				Search For Top 5 Videos.
+			</p>
+			<form class="form_code" id="form">
+				<input type="text" placeholder="Search Here" id="search" class="form-control">
+				<!--<a href="https://www.youtube.com/" rel="stylesheet">-->
+					<button type="submit">Search</button>
+			</form>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div id="videos">
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="connect.js"></script> 
+</html>
